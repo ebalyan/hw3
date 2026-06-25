@@ -63,6 +63,7 @@ const T& Stack<T>::top() const
 throw std::underflow_error("Stack is empty");
     }
 return std::vector<T>::back();
+}
 
 
 #endif
