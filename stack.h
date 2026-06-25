@@ -36,9 +36,9 @@ bool Stack<T>::empty() const
 }
 
 template <typename T>
-size_t Stack<T>::size();
+size_t Stack<T>::size() const
 {
-return std::vector<T>::size();
+    return std::vector<T>::size();
 }
 
 template <typename T>
@@ -59,7 +59,7 @@ throw std::underflow_error("Stack is empty");
 template <typename T>
 const T& Stack<T>::top() const
 {
-    if (std::vectpr<T>::empty()) {
+    if (std::vector<T>::empty()) {
 throw std::underflow_error("Stack is empty");
     }
 return std::vector<T>::back();
