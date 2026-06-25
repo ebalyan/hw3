@@ -119,6 +119,7 @@ bool Circuit::parse(const char* fname)
 					
 					m_gates.push_back(new NotGate(m_wires[stoi(s_in)], m_wires[stoi(s_output)]));
 				} 
+			}
         }
         if(line == "INJECT")
         {
